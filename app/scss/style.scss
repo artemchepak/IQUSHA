@@ -4,4 +4,102 @@
 @import 'libs';
 @import 'global';
 
+/*header start*/
 
+.header {
+    background-color: #fff;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+    &__logo img {
+        height: 60px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-item+.header__list-item {
+            margin-left: 20px;
+        }
+        img {
+            height: 35px;
+        }
+    }
+}
+
+
+/*header end*/
+
+
+/*top start*/
+
+.top {
+    background-color: $rose-bg;
+    &__inner {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 60px 0;
+        position: relative;
+    }
+    &__box {
+        max-width: 600px;
+        height: 100%;
+    }
+    &__title {
+        font-size: 46px;
+        line-height: 58px;
+        font-weight: 700;
+        color: $dark-title;
+        margin-bottom: 35px;
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 30px;
+        color: $gray-text;
+        margin-bottom: 60px;
+    }
+    &__img-box {
+        z-index: 10;
+        position: relative;
+    }
+    &__img {
+        height: 800px;
+        z-index: 10;
+        position: relative;
+    }
+    &__decoration-dark {
+        width: 550px;
+        height: 450px;
+        background-color: $rose-dark-bg;
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        z-index: 1;
+    }
+    &__decoration-light {
+        width: 60%;
+        height: 335px;
+        background-color: $rose-light-bg;
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        z-index: 1;
+    }
+    &__decoration-dotted {
+        width: 400px;
+        height: 350px;
+        background-image: url("../images/dotted-patern.png");
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -60px;
+        left: -60px;
+        z-index: 1;
+    }
+}
+
+
+/*top end*/
