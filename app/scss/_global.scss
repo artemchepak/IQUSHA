@@ -57,6 +57,9 @@ a:focus {
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    background-color: $light-bg;
+    color: $dark-text;
+    font-size: 18px;
 }
 
 .btn {
@@ -65,4 +68,56 @@ body {
     color: $light-text;
     font-size: 30px;
     font-weight: 500;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+    color: $accent;
+}
+
+.slick-btn {
+    width: 50px;
+    position: absolute;
+}
+
+.slick-prev {
+    top: 200px;
+    left: 30px;
+    z-index: 10;
+}
+
+.slick-next {
+    top: 200px;
+    right: 30px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    li {
+        display: inline-block;
+    }
+    li+li {
+        margin-left: 30px;
+    }
+    button {
+        padding: 0;
+        font-size: 0;
+        margin: 0;
+        width: 24px;
+        height: 24px;
+        background-color: #E2E2E2;
+        border-radius: 50%;
+        border: none;
+    }
+}
+
+.slick-active button {
+    background-color: $accent;
 }
